@@ -1067,9 +1067,9 @@ body::before {
 // URL da API do bot — muda automaticamente entre Railway (prod) e localhost (dev)
 // Quando estiver no Vercel, substitua 'COLOQUE_URL_DO_RAILWAY_AQUI' pela URL real do Railway
 // Exemplo: 'https://seu-projeto.railway.app/sinais'
-const API_URL_RAILWAY = 'COLOQUE_URL_DO_RAILWAY_AQUI';
+const API_URL_RAILWAY = 'https://corneredge.up.railway.app/sinais';
 const API_URL_LOCAL   = 'http://localhost:8765/sinais';
-const API_URL = (API_URL_RAILWAY && API_URL_RAILWAY !== 'COLOQUE_URL_DO_RAILWAY_AQUI')
+const API_URL = (API_URL_RAILWAY && API_URL_RAILWAY !== 'https://corneredge.up.railway.app/sinais')
   ? API_URL_RAILWAY
   : API_URL_LOCAL;
 const REFRESH_INTERVAL = 15000;
