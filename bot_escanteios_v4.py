@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 ╔═══════════════════════════════════════════════════════════════╗
-║   BOT DE ESCANTEIOS v4.5 — PRÉ-LIVE + LIVE + SITE WEB       ║
+║   STATFLOW BOT v4.5 — PRÉ-LIVE + LIVE + SITE WEB       ║
 ║   Motor completo com servidor web embutido na porta 8765      ║
 ╚═══════════════════════════════════════════════════════════════╝
 
@@ -282,7 +282,7 @@ class _Handler(BaseHTTPRequestHandler):
             self.wfile.write(body)
 
         elif self.path in ("/", "/health"):
-            body = b'{"status":"ok","servico":"CornerEdge Bot"}'
+            body = b'{"status":"ok","servico":"StatFlow Bot"}'
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self._headers_cors()
@@ -2009,7 +2009,7 @@ def listener_telegram():
 def main():
     print("""
 ╔═══════════════════════════════════════════════════════════════╗
-║   🤖 BOT DE ESCANTEIOS v4.6 — RAILWAY EDITION                ║
+║   🤖 STATFLOW BOT v4.6 — RAILWAY EDITION                ║
 ╠═══════════════════════════════════════════════════════════════╣
 ║  Controle via Telegram:                                       ║
 ║    /status   /jogos   /pausar   /retomar   /ajuda             ║
@@ -2066,7 +2066,7 @@ def main():
         log(f"⚠️  Servidor web não iniciou na porta {PORTA_WEB}", "AVISO")
 
     msg_inicio = (
-        "🤖 <b>Bot de Escanteios v4.6</b>\n"
+        "🤖 <b>StatFlow Bot v4.6</b>\n"
         "AGENDA + PRÉ-LIVE + AO VIVO + 🧠 IA\n\n"
         f"📡 {len(TODAS_LIGAS)} ligas monitoradas\n"
         f"🧠 Gemini: <b>{'Ativo' if USAR_GEMINI else 'Desativado'}</b>\n\n"
