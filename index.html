@@ -3412,7 +3412,7 @@ if(_meuNick) {
 //  CONFIGURAR URL
 // ══════════════════════════════════════════════════════
 function configurarUrl() {
-  const atual=localStorage.getItem('statflow_api_url')||API_URL||'';
+  const atual=localStorage.getItem('statflow-production-1740.up.railway.app/sinais')||API_URL||'';
   const nova=prompt('🔗 URL do bot Railway\nDeve terminar com /sinais\n\nAtual: '+(atual||'(não configurada)'),atual);
   if(nova===null) return;
   if(!nova||!nova.startsWith('http')){ alert('❌ URL inválida'); return; }
