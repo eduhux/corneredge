@@ -1,1 +1,1 @@
-{ "version": 2, "outputDirectory": ".", "framework": null } 
+{ "version": 2, "public": true } 
