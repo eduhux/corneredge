@@ -1,0 +1,7 @@
+*.py 
+requirements.txt 
+Procfile 
+runtime.txt 
+railway.toml 
+*.json 
+!vercel.json 
